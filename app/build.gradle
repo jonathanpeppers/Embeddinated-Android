@@ -54,9 +54,9 @@ dependencies {
     compile files('libs/jna-4.4.0.jar')
 }
 
-apply plugin: 'greeting'
+apply plugin: 'embeddinator'
 
-greeting {
+embeddinator {
     message = 'Hi'
     greeter = 'Gradle'
 }
