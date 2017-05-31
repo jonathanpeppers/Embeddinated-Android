@@ -2,8 +2,8 @@ apply plugin: 'java'
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':managed')
     compile project(':jna-4.4.0')
+    compile project(':managed')
 }
 
 sourceCompatibility = "1.7"
