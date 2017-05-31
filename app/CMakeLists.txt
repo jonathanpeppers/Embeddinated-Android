@@ -42,16 +42,3 @@ target_link_libraries( # Specifies the target library.
                        # Links the target library to the log library
                        # included in the NDK.
                        ${log-lib} )
-
-include_directories(/Library/Frameworks/Mono.framework/Versions/Current/include/mono-2.0/)
-
-add_library( managed
-             SHARED
-             src/main/c/glib.c
-             src/main/c/managed.c
-             src/main/c/mono_embeddinator.c
-             src/main/c/mscorlib.c )
-
-link_directories(/Library/Frameworks/Mono.framework/Versions/Current/lib)
-target_link_libraries( managed
-                       monosgen-2.0 )
