@@ -1,1 +1,1 @@
-include ':app', ':lib-java', ':managed'
+include ':app', ':lib-java', ':managed', ':jna-4.4.0'
