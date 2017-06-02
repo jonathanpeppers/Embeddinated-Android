@@ -9,7 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import managed_dll.BuiltinTypes;
+import managed_dll.methods.Parameters;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                BuiltinTypes b = new BuiltinTypes();
-                Snackbar.make(view, "Hello from " + b.returnsString(), Snackbar.LENGTH_LONG)
+                String text = Parameters.concat("Hello, ", "Embeddinator!");
+                Snackbar.make(view, text, Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
