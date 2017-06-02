@@ -3,7 +3,7 @@ apply plugin: 'java'
 dependencies {
     compile fileTree(dir: "$buildDir/native-libs", include: 'native-libs.jar')
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':jna-4.4.0')
+    compile project(':managed')
 }
 
 sourceCompatibility = "1.7"
