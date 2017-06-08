@@ -27,6 +27,13 @@ android {
             path "CMakeLists.txt"
         }
     }
+    productFlavors {
+        main {
+            ndk {
+                abiFilters "armeabi-v7a", "armeabi", "x86", "x86_64"
+            }
+        }
+    }
 }
 
 dependencies {
