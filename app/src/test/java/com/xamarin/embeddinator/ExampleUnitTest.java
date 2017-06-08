@@ -1,4 +1,4 @@
-package com.xamarin.embeddinated;
+package com.xamarin.embeddinator;
 
 import org.junit.Test;
 

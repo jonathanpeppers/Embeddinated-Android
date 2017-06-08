@@ -1,4 +1,4 @@
-package com.xamarin.embeddinated;
+package com.xamarin.embeddinator;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.xamarin.embeddinated", appContext.getPackageName());
+        assertEquals("com.xamarin.embeddinator", appContext.getPackageName());
     }
 }
