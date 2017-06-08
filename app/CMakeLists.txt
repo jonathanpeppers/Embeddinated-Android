@@ -9,6 +9,7 @@ cmake_minimum_required(VERSION 3.4.1)
 add_library(mono SHARED IMPORTED)
 set_target_properties(mono PROPERTIES IMPORTED_LOCATION ${CMAKE_SOURCE_DIR}/src/main/jniLibs/${ANDROID_ABI}/libmonosgen-2.0.so)
 include_directories(/Library/Frameworks/Mono.framework/Versions/Current/include/mono-2.0)
+include_directories(src/main/cpp/embeddinator)
 
 # Creates and names a library, sets it as either STATIC
 # or SHARED, and provides the relative paths to its source code.
@@ -23,6 +24,8 @@ add_library( # Sets the name of the library.
 
              # Provides a relative path to your source file(s).
              src/main/cpp/native-lib.cpp
+             src/main/cpp/managed.c
+             src/main/cpp/mscorlib.c
              src/main/cpp/embeddinator/c-support.c
              src/main/cpp/embeddinator/glib.c
              src/main/cpp/embeddinator/mono-support.c

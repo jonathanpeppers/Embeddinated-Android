@@ -30,7 +30,7 @@ android {
     productFlavors {
         main {
             ndk {
-                abiFilters "armeabi-v7a", "armeabi", "x86", "x86_64"
+                abiFilters "armeabi-v7a", "armeabi", "x86", "x86_64", "arm64-v8a"
             }
         }
     }
