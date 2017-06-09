@@ -27,6 +27,9 @@ android {
             path "CMakeLists.txt"
         }
     }
+    aaptOptions {
+        noCompress 'dll'
+    }
     productFlavors {
         main {
             ndk {
